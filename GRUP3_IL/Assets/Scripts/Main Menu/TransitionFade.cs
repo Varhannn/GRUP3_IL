@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using static System.TimeZoneInfo;
 
-public class MenuController : MonoBehaviour
+public class TransitionFade : MonoBehaviour
 {
-
     public Animator transition;
     public float transitionTime = 1f;
-    public Button playButton;
 
     // Update is called once per frame
     void Start()
     {
-        playButton.onClick.AddListener(ChangeScene);
+        
     }
 
     public void ChangeScene()

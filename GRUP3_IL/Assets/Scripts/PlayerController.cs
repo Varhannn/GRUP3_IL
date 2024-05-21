@@ -90,11 +90,20 @@ public class PlayerController : MonoBehaviour
 
         if (other.CompareTag("Box"))
         {
-            isPushing = true;
-            Debug.Log("Pushing Box");
+            if (transform.position.y > other.transform.position.y + 0.5f)
+            {
+                onGround = true;
+                isPushing = false;
+                Debug.Log("On Box");
+            }
+            else
+            {
+                isPushing = true;
+                Debug.Log("Pushing Box");
+            }
         }
 
-        if (other.tag == "PhotoFragments")
+            if (other.tag == "PhotoFragments")
         {
             photoFragmentsManager.Add();
             Destroy(other.gameObject);
@@ -113,8 +122,16 @@ public class PlayerController : MonoBehaviour
 
         if (other.CompareTag("Box"))
         {
-            isPushing = false;
-            Debug.Log("Not Pushing Box");
+            if (transform.position.y > other.transform.position.y + 0.5f)
+            {
+                onGround = false;
+                Debug.Log("No longer on Box");
+            }
+            else
+            {
+                isPushing = false;
+                Debug.Log("Not Pushing Box");
+            }
         }
     }
 }
