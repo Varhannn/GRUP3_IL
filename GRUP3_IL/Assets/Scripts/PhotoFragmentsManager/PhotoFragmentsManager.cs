@@ -16,6 +16,6 @@ public class PhotoFragmentsManager : MonoBehaviour
 
     void Update()
     {
-        text.text = "Collected Photo : " + currentPhotoFragments + " / " + photoFragmentsTotal.ToString();
+        text.text = ": " + currentPhotoFragments + " / " + photoFragmentsTotal.ToString();
     }
 }
