@@ -28,9 +28,4 @@ public class TransitionFade : MonoBehaviour
 
         SceneManager.LoadScene(levelIndex);
     }
-
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
 }
