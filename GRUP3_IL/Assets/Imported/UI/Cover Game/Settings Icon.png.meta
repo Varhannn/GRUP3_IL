@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20ff0b12781514b40a16ea65b2444fd4
+guid: 215b0854a8c89564491b4baa681af8ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Settings Icon_0
+      name: Settings Icon_2
       rect:
         serializedVersion: 2
-        x: 28
-        y: 21
-        width: 944
-        height: 211
+        x: 38
+        y: 44
+        width: 925
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8986da2afc61cf3468eed217eb48e60f
-      internalID: -1194746985
+      spriteID: 1e6e31773d74cad478e189d9afc499ca
+      internalID: 655566935
       vertices: []
       indices: 
       edges: []
@@ -128,13 +128,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Settings Icon_0: -1194746985
-      Settings Icon_1: -1639406148
-      Settings Icon_2: -1006191212
-      Settings Icon_3: 1821295682
-      Settings Icon_4: -716921859
-      Settings Icon_5: -395168923
-      Settings Icon_6: -351877257
+      Settings Icon_0: -630956466
+      Settings Icon_1: -1956331677
+      Settings Icon_2: 655566935
+      Settings Icon_3: 1566079641
+      Settings Icon_4: -1259821846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

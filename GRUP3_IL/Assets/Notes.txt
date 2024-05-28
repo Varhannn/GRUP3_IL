@@ -1,0 +1,20 @@
+Dani : 
+- Basic Movement (Done)
+- UI Main Menu (Done)
+- In Game Setting (Done)
+- Sparkling Fx (Done)
+- Setup Level Design 
+- Add Bgm + Sfx
+- Post Processing (?)
+
+Farhan :
+- Collectible Photo Fragment (Done)
+- Repair Cinemachine Cam
+- Save System Level / Fragments
+- Health + UI
+- Cutscene
+- Dialog(?)
+
+Note : 
+- Traps blom dicoding (Compare tag : "Traps")
+- Background blom dimasukin ke player

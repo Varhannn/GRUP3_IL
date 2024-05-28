@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a8d34132808664742b2661f3ba4e60af
+guid: a9d2deba2ad624640946642572f8aa10
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,10 +100,10 @@ TextureImporter:
       name: Exit Icon_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 31
-        width: 480
-        height: 192
+        x: 39
+        y: 55
+        width: 428
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b58386b6add758e4189584821f2ce2af
-      internalID: 580170481
+      spriteID: 3b15addef8212bc48903c998f5dabdd8
+      internalID: 282575999
       vertices: []
       indices: 
       edges: []
@@ -128,10 +128,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Exit Icon_0: 580170481
-      Exit Icon_1: 709932324
-      Exit Icon_2: 1648132510
-      Exit Icon_3: -538727808
+      Exit Icon_0: 282575999
+      Exit Icon_1: 8933799
+      Exit Icon_2: 1922195837
+      Exit Icon_3: -132474522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

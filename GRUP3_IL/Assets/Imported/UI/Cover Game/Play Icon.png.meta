@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 36c7194916c4e0e4aa0475d18313c471
+guid: b864ec69e867b164e93c0d4f860776de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,10 +100,10 @@ TextureImporter:
       name: Play Icon_1
       rect:
         serializedVersion: 2
-        x: 20
-        y: 34
-        width: 520
-        height: 181
+        x: 40
+        y: 35
+        width: 506
+        height: 139
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74bc7a0dbe0f6ca4abbfbb92cdffd859
-      internalID: 642497502
+      spriteID: b79c7996bee560e43bfb62c72c9d254a
+      internalID: -1499841847
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Play Icon_0: -1703761983
-      Play Icon_1: 642497502
+      Play Icon_0: -1662450993
+      Play Icon_1: -1499841847
+      Play Icon_2: -578401950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
