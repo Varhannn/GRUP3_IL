@@ -9557,7 +9557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpHeight: 8
+  jumpHeight: 7.5
   onGround: 0
   photoFragmentsManager: {fileID: 452737546}
 --- !u!58 &818538224
