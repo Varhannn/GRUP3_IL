@@ -9,7 +9,7 @@ public class FallsPlatforms : MonoBehaviour
     private bool OnPlatform = false;
     private Animator anim;
 
-    public float fallDelay = 3f;
+    public float fallDelay = 1f;
     public float destroyDelay = 1f;
 
     void Start()
