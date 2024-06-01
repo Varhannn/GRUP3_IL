@@ -11,7 +11,7 @@ public class PhotoFragmentsManager : MonoBehaviour
 
     public void Add()
     {
-        currentPhotoFragments++;
+        currentPhotoFragments += 1;
     }
 
     void Update()

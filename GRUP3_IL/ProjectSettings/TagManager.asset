@@ -9,6 +9,7 @@ TagManager:
   - Box
   - Ground
   - Traps
+  - CheckPoints
   layers:
   - Default
   - TransparentFX

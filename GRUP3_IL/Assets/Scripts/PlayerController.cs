@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using DG.Tweening;
+using Unity.VisualScripting;
+
 
 //using dotween
 using UnityEngine;
@@ -23,6 +25,8 @@ public class PlayerController : MonoBehaviour
     bool isPushing = false;
 
     [SerializeField] PhotoFragmentsManager photoFragmentsManager;
+    [SerializeField] PlayerHealthSystem playerHealth;
+    [SerializeField] CheckPointSystem checkPointSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -103,11 +107,21 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-            if (other.tag == "PhotoFragments")
+        if (other.CompareTag("PhotoFragments"))
         {
             photoFragmentsManager.Add();
             Destroy(other.gameObject);
             Debug.Log("Photo Collected " + photoFragmentsManager.currentPhotoFragments);
+        }
+
+        if (other.CompareTag("Traps"))
+        {
+            playerHealth.TakeDamage(1);
+        }
+
+        if (other.CompareTag("CheckPoints"))
+        {
+            checkPointSystem.setCheckPoint(other.transform);
         }
     }
 
