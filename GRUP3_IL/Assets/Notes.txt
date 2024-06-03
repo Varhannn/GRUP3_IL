@@ -3,9 +3,9 @@ Dani :
 - UI Main Menu (Done)
 - In Game Setting (Done)
 - Sparkling Fx (Done)
-- Setup Level Design 
-- Add Bgm + Sfx
-- Post Processing (?)
+- Setup Level Design  (Done)
+- Add Bgm + Sfx 
+- Post Processing (Done)
 
 Farhan :
 - Collectible Photo Fragment (Done)
