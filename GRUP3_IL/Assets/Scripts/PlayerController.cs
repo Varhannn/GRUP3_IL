@@ -28,11 +28,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerHealthSystem playerHealth;
     [SerializeField] CheckPointSystem checkPointSystem;
 
+    [SerializeField]  AudioClip[] audioClips;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,13 +54,16 @@ public class PlayerController : MonoBehaviour
         hAxis = Input.GetAxis("Horizontal");
         direction = new Vector2(hAxis, 0);
         transform.Translate(direction * Time.deltaTime * speed);
-    }
+        }
 
     void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space) && onGround == true)
         {
             rb.velocity = new Vector2(0, 1) * jumpHeight;
+
+            audioSource.clip = audioClips[1];
+            audioSource.Play();
         }
     }
 
@@ -112,11 +119,16 @@ public class PlayerController : MonoBehaviour
             photoFragmentsManager.Add();
             Destroy(other.gameObject);
             Debug.Log("Photo Collected " + photoFragmentsManager.currentPhotoFragments);
+
+            audioSource.clip = audioClips[2];
+            audioSource.Play();
         }
 
         if (other.CompareTag("Traps"))
         {
             playerHealth.TakeDamage(1);
+            audioSource.clip = audioClips[3];
+            audioSource.Play();
         }
 
         if (other.CompareTag("CheckPoints"))
