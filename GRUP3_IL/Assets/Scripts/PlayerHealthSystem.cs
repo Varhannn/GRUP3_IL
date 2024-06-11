@@ -30,7 +30,7 @@ public class PlayerHealthSystem : MonoBehaviour
 
     public void TakeDamage(int _damage)
     {
-        if (currentHealth > 0 && !isInvicible)
+        if (currentHealth > 1 && !isInvicible)
         {
             isInvicible = true;
             playerSprite.DOColor(Color.red, 0.5f).SetLoops(3, LoopType.Yoyo).onStepComplete = () =>
@@ -41,15 +41,11 @@ public class PlayerHealthSystem : MonoBehaviour
             healthImage[currentHealth - 1].sprite = lostLifeSprite;
             currentHealth -= _damage;
             Debug.Log("Damage Taken | CurrentHealth :  " + currentHealth);
-
-            if (currentHealth > 0)
-            {
-                transform.position = checkPointSystem.currentCheckpoint.position;
-            }
-            else
-            {
-                Died();
-            }
+            transform.position = checkPointSystem.currentCheckpoint.position;
+        }
+        else
+        {
+            Died();
         }
     }
 
