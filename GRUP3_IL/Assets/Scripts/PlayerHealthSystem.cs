@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
@@ -39,9 +40,27 @@ public class PlayerHealthSystem : MonoBehaviour
             };
             healthImage[currentHealth - 1].sprite = lostLifeSprite;
             currentHealth -= _damage;
-            // playerCollider.isTrigger = true;
-            transform.position = checkPointSystem.currentCheckpoint.position;
             Debug.Log("Damage Taken | CurrentHealth :  " + currentHealth);
+
+            if (currentHealth > 0)
+            {
+                transform.position = checkPointSystem.currentCheckpoint.position;
+            }
+            else
+            {
+                Died();
+            }
         }
+    }
+
+    void Died()
+    {
+        StartCoroutine(Respawn());
+    }
+
+    IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

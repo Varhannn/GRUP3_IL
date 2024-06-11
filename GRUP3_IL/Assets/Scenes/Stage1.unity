@@ -1673,7 +1673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 756, y: 457}
+  m_AnchoredPosition: {x: 756, y: 491}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140646022
@@ -21171,7 +21171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 894, y: 457}
+  m_AnchoredPosition: {x: 894, y: 491}
   m_SizeDelta: {x: 168.56, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1488951505
@@ -31834,6 +31834,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 483099403907960356, guid: e73f2ef45d5450d44a388c1d2d136b2a, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 4935422596152905665}
+    - target: {fileID: 483099403907960356, guid: e73f2ef45d5450d44a388c1d2d136b2a, type: 3}
       propertyPath: audioClips.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -31936,6 +31940,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2007653476}
   m_SourcePrefab: {fileID: 100100000, guid: e73f2ef45d5450d44a388c1d2d136b2a, type: 3}
+--- !u!114 &4935422596152905665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3214877147915018274, guid: e73f2ef45d5450d44a388c1d2d136b2a, type: 3}
+  m_PrefabInstance: {fileID: 4935422596152905664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007653466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e471ff60700fc441860847eb50337ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6556243686486347612
 Animator:
   serializedVersion: 5
