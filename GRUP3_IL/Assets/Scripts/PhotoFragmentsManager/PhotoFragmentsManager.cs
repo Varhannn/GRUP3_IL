@@ -13,7 +13,13 @@ public class PhotoFragmentsManager : MonoBehaviour
     {
         currentPhotoFragments += 1;
     }
-
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("CollectedPhotos"))
+        {
+            currentPhotoFragments = PlayerPrefs.GetInt("CollectedPhotos");
+        }
+    }
     void Update()
     {
         text.text = ": " + currentPhotoFragments + " / " + photoFragmentsTotal.ToString();

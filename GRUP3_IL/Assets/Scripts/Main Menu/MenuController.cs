@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
     public Button playButton;
+    [SerializeField] SaveSystem SaveSystem;
 
     // Update is called once per frame
     void Start()
@@ -19,7 +20,7 @@ public class MenuController : MonoBehaviour
 
     public void ChangeScene()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + SaveSystem.LoadCurrentStage()));
     }
 
     IEnumerator LoadLevel(int levelIndex)

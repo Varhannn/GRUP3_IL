@@ -8,9 +8,14 @@ public class NextScene : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
     public string sceneName;
+    [SerializeField] PhotoFragmentsManager photoFragmentsManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        PlayerPrefs.SetInt("CurrentStage", SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Current Stage Saved : " + PlayerPrefs.GetInt("CurrentStage"));
+        PlayerPrefs.SetInt("CollectedPhotos", photoFragmentsManager.currentPhotoFragments);
+
         if (collision.CompareTag("Player"))
         {
             StartCoroutine(ChangeScene());
