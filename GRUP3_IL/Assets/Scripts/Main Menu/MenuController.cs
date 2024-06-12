@@ -20,7 +20,14 @@ public class MenuController : MonoBehaviour
 
     public void ChangeScene()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + SaveSystem.LoadCurrentStage()));
+        if (PlayerPrefs.HasKey("CurrentStage") && PlayerPrefs.GetInt("CurrentStage") == 1)
+        {
+            SceneManager.LoadScene("PrologCutscene");
+        }
+        else
+        {
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + SaveSystem.LoadCurrentStage()));
+        }
     }
 
     IEnumerator LoadLevel(int levelIndex)
