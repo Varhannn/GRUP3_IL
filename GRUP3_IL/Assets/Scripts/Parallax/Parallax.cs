@@ -4,23 +4,36 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
+    public Camera cam;
+    public Transform followTarget;
 
-    Material mat;
-    float distance;
+    // Starting pos for parallax game object
+    Vector2 startingPosition;
 
-    [Range(0f, 0.5f)]
-    public float speed = 0.2f;
+    // Start Z value for parallax game object
+    float startingZ;
+
+    Vector2 camMoveSinceStart => (Vector2)cam.transform.position - startingPosition;
+
+    float zDistanceFromTarget => transform.position.z - followTarget.transform.position.z;
+
+    float clippingPlane => (cam.transform.position.z + (zDistanceFromTarget > 0 ? cam.farClipPlane : cam.nearClipPlane));
+
+    // Z lebih dekat ke player = gerakan lebih pelan
+    float parallaxFactor => Mathf.Abs(zDistanceFromTarget) / clippingPlane;
 
     // Start is called before the first frame update
     void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        startingPosition = transform.position;
+        startingZ = transform.position.z;
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance += Time.deltaTime * speed;
-        mat.SetTextureOffset("_MainTex", Vector2.right * distance);
+        Vector2 newPosition = startingPosition + camMoveSinceStart * parallaxFactor;
+
+        transform.position = new Vector3(newPosition.x, newPosition.y, startingZ);
     }
 }
