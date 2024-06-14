@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 160717514}
   - component: {fileID: 160717513}
   - component: {fileID: 160717512}
+  - component: {fileID: 160717515}
   m_Layer: 5
   m_Name: Load Game
   m_TagString: Untagged
@@ -582,7 +583,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 1.14
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -602,7 +603,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1113173977}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -662,6 +663,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160717510}
   m_CullTransparentMesh: 1
+--- !u!114 &160717515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160717510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769618745e7d81244899eb5bd61a0234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &165405205
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +972,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1113173977}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2423,7 +2436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1710052828}
   transitionTime: 1.5
-  playButton: {fileID: 160717512}
   SaveSystem: {fileID: 1282785159}
 --- !u!4 &1113173978
 Transform:

@@ -9,22 +9,17 @@ public class MenuController : MonoBehaviour
 
     public Animator transition;
     public float transitionTime = 1f;
-    public Button playButton;
     [SerializeField] SaveSystem SaveSystem;
 
-    // Update is called once per frame
-    void Start()
+    public void NewGame()
     {
-        playButton.onClick.AddListener(ChangeScene);
+        SaveSystem.NewGame();
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 4));
     }
 
-    public void ChangeScene()
+    public void LoadGame()
     {
-        if (PlayerPrefs.HasKey("CurrentStage") && PlayerPrefs.GetInt("CurrentStage") == 1)
-        {
-            SceneManager.LoadScene("PrologCutscene");
-        }
-        else
+        if (PlayerPrefs.GetInt("CurrentStage") > 1)
         {
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + SaveSystem.LoadCurrentStage()));
         }

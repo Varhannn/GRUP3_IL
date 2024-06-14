@@ -17,6 +17,7 @@ public class SaveSystem : MonoBehaviour
             PlayerPrefs.SetInt("CurrentStage", 1);
             PlayerPrefs.SetInt("CollectedPhotos", 0);
             Debug.Log("Current Stage : " + PlayerPrefs.GetInt("CurrentStage"));
+            Debug.Log("Collected Photos : " + PlayerPrefs.GetInt("CollectedPhotos"));
         }
     }
 
@@ -31,6 +32,11 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
+    public void NewGame()
+    {
+        PlayerPrefs.SetInt("CurrentStage", 1);
+        PlayerPrefs.SetInt("CollectedPhotos", 0);
+    }
     public int LoadCurrentStage()
     {
         return PlayerPrefs.GetInt("CurrentStage");
