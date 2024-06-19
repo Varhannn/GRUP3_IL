@@ -5316,8 +5316,8 @@ Transform:
   m_GameObject: {fileID: 228167513}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 390.45, y: 6.846, z: 0}
-  m_LocalScale: {x: 0.73483, y: 0.73483, z: 0.73483}
+  m_LocalPosition: {x: 390.24, y: 6.61, z: 0}
+  m_LocalScale: {x: 0.61142266, y: 0.61142266, z: 0.61142266}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 131694665}
@@ -15822,8 +15822,8 @@ Transform:
   m_GameObject: {fileID: 619742264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 296.713, y: 5.181, z: 0}
-  m_LocalScale: {x: 0.73483, y: 0.73483, z: 0.73483}
+  m_LocalPosition: {x: 296.56, y: 5.03, z: 0}
+  m_LocalScale: {x: 0.63091034, y: 0.63091034, z: 0.63091034}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 131694665}
@@ -22557,7 +22557,6 @@ Transform:
   m_Children:
   - {fileID: 938074972}
   - {fileID: 1396166181}
-  - {fileID: 1272341533}
   - {fileID: 1298436061}
   - {fileID: 419332249}
   - {fileID: 576890138}
@@ -26887,7 +26886,7 @@ Transform:
   m_GameObject: {fileID: 1072839199}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70568424, w: 0.7085265}
-  m_LocalPosition: {x: 58.19, y: -8.24, z: 0.031520907}
+  m_LocalPosition: {x: 58.07, y: -8.24, z: 0.031520907}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30991,11 +30990,11 @@ Transform:
   m_GameObject: {fileID: 1272341532}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -75.925354, y: -5.3184023, z: 0.031520907}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.1497407, y: -2.4936833, z: 0.04395599}
+  m_LocalScale: {x: 1.0559998, y: 1.0559998, z: 1.0559998}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 926699403}
+  m_Father: {fileID: 1495692746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1272341534
 MonoBehaviour:
@@ -33222,7 +33221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: a0677d44ba4a4e943945a7ceeb9d1959, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -33262,7 +33261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 37750628}
-  transitionTime: 1
+  transitionTime: 2
   sceneName: Stage3
   photoFragmentsManager: {fileID: 1265328778}
 --- !u!61 &1357657431
@@ -36987,11 +36986,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 723957219582587075, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1221183533}
+    - targetCorrespondingSourceObject: {fileID: 5649188533299157132, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1272341533}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
 --- !u!4 &1495692745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 723957219582587075, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
+  m_PrefabInstance: {fileID: 1495692744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1495692746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5649188533299157132, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
   m_PrefabInstance: {fileID: 1495692744}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1497246211
@@ -48791,7 +48798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 37750628}
-  transitionTime: 1
+  transitionTime: 2
 --- !u!1 &1955665726
 GameObject:
   m_ObjectHideFlags: 0
