@@ -18207,6 +18207,11 @@ MonoBehaviour:
   transition: {fileID: 6556243686486347612}
   transitionTime: 1
   sceneName: Stage2
+  playableDirector: {fileID: 0}
+  player: {fileID: 0}
+  CutsceneCanvas: {fileID: 0}
+  timer: {fileID: 0}
+  isEnding: 0
   photoFragmentsManager: {fileID: 452737546}
 --- !u!1001 &1127157289
 PrefabInstance:
@@ -20407,7 +20412,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'DATU : Could be a clue. I''ll hang onto it for now.'
+  m_text: '"Could be a clue. I''ll hang onto it for now."'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20416,7 +20421,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -28839,10 +28844,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'DATU : What''s this? Part of an old photograph? But what is this a picture
-    of?
+  m_text: '"What''s this? Part of an old photograph? But what is this a picture of?
 
-    He purses his lips and tucks the photo piece into his pocket
+    He
+    purses his lips and tucks the photo piece into his pocket"
 
 '
   m_isRightToLeft: 0
@@ -28853,7 +28858,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
