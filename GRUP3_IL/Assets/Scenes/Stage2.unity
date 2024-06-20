@@ -31266,11 +31266,11 @@ Transform:
   m_GameObject: {fileID: 1221183532}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -623.61926, y: -16.61465, z: 0}
-  m_LocalScale: {x: 4.500855, y: 4.500855, z: 4.500855}
+  m_LocalPosition: {x: -148.42679, y: -6.3797617, z: 0.04395599}
+  m_LocalScale: {x: 1.0559996, y: 1.0559996, z: 1.0559996}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1495692745}
+  m_Father: {fileID: 1495692746}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1221183534
 MonoBehaviour:
@@ -34605,6 +34605,11 @@ MonoBehaviour:
   transition: {fileID: 37750628}
   transitionTime: 2
   sceneName: Stage3
+  playableDirector: {fileID: 0}
+  player: {fileID: 0}
+  CutsceneCanvas: {fileID: 0}
+  timer: {fileID: 0}
+  isEnding: 0
   photoFragmentsManager: {fileID: 1265328778}
 --- !u!61 &1357657431
 BoxCollider2D:
@@ -38410,12 +38415,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 723957219582587075, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1221183533}
     - targetCorrespondingSourceObject: {fileID: 5649188533299157132, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1272341533}
+    - targetCorrespondingSourceObject: {fileID: 5649188533299157132, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1221183533}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7374ddd895b8ecf469e817d199d7b1f6, type: 3}
 --- !u!4 &1495692745 stripped
