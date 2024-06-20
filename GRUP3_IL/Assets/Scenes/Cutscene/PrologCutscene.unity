@@ -550,29 +550,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 343192019}
   lines:
-  - 'DUTCH CAPTAIN : My dear, Maipa Deapati, you are a rare beauty. Leave that husband
-    of yours and come with me.'
-  - 'However, Maipa Deapati looked displeased with his proposal. '
-  - 'MAIPA DEAPATI : How dare you make such a dishonorable proposition! I would never
-    betray my beloved Datu Museng!'
-  - "DUTCH CAPTAIN : Don\u2019t be a fool, woman! I can take you by force if I must."
-  - "MAIPA DEAPATI : I\u2019d rather die a thousand deaths than leave my husband\u2019s
-    side! You can threaten and torment me all you want, but you\u2019ll never break
-    my devotion to Datu Museng. I spit on your offer!"
-  - "The Dutch Captain\u2019s face turned red with rage as Maipa Deapati firmly stood
-    her ground, refusing to be swayed by his advances or intimidation tactics."
-  - 'DUTCH CAPTAIN : Seize Her!'
-  - Before they could move, Maipa Deapati turned to Datu Museng.
-  - "MAIPA DEAPATI : I cannot bear the thought of being parted from you or submitting
-    to this vile man\u2019s desires. I beg of you, grant me an honorable death by
-    your own hand. My love belongs to you and you alone."
-  - "Datu Museng\u2019s heart shattered at her words. With a heavy heart, he nodded
-    sadly."
-  - 'DATU MUSENG : If this is truly your wish, I shall honor it. May we be reunited
-    in the next life.'
-  - He drew his dagger, Badik, and with a swift motion, he plunged Badik into her
-    neck, granting her a swift and honorable death. For a moment, it felt like his
-    body had moved on its own.
   - "Was it truly by his own hands that his beloved wife\u2019s life was taken? He
     stared down on his bloody hands, his weapon long forgotten with a sharp clatter.
     His vision swam, and for a harrowing moment, he felt like this was a nightmare
@@ -580,32 +557,32 @@ MonoBehaviour:
   - "As Maipa Deapati\u2019s life slipped away, an agonizing wail tore from Datu
     Museng\u2019s lips. He clutched her body tightly, rocking back and forth as waves
     of grief crashed over him."
-  - "DATU MUSENG : No, no, no! My love, my world, how could this happen\u2026?"
+  - "\"No, no, no! My love, my world, how could this happen\u2026?\""
   - "His entire being felt shattered, as if his soul had been ripped apart. The pain
     was painfully unbearable. He pressed desperate kisses to her cooling forehead,
     her cheeks\u2026 willing her to return to him."
-  - "DATU MUSENG : Please\u2026 come back to me. I cannot go on without you."
+  - "\"Please\u2026 come back to me. I cannot go on without you.\""
   - 'Datu Museng wails of anguish echoed through the air. He cursed the Dutch, the
     fates, and himself for having to take the life of the woman he cherished above
     all else. His world had crumbled into a black abyss of despair. As the Dutch
     Captain and his men closed in, swords drawn, Datu Museng looked up at the sky. '
-  - "DATU MUSENG : Oh, Great God! My wife, Maipa, was taken from me in such a cruel
-    way...\u201D Throwing his head back, he let out a scream to the heavens. "
+  - "\"Oh, Great God! My wife, Maipa, was taken from me in such a cruel way...\u201D
+    Throwing his head back, he let out a scream to the heavens. \""
   - Throwing his head back, he let out a scream to the heavens.
-  - "DATU MUSENG : I beg you\u2026 turn back the hands of time! Grant me just one
-    more moment with my Maipa! I will do anything\u2026 anything you want!"
+  - "II beg you\u2026 turn back the hands of time! Grant me just one more moment
+    with my Maipa! I will do anything\u2026 anything you want!\""
   - "He clutched her body tighter, as if trying to shield her from further harm.
     Datu Museng closed his eyes, preparing for the inevitable. In his mind\u2019s
     eye, he saw visions of Maipa Deapati smiling so radiantly."
   - The sound of steel rang out, and then everything turned black.
   - Datu wakes up in the forest, disoriented.
-  - "DATU : groans Ugh\u2026where am I? looks around confused This isn't\u2026how
-    did I get here? He tries to remember but his mind is foggy. "
-  - "DATU : I can't recall anything except\u2026my name is Datu. And there's something\u2026something
-    missing that I can't quite grasp."
+  - "\"groans Ugh\u2026where am I? looks around confused This isn't\u2026how did
+    I get here? He tries to remember but his mind is foggy. \""
+  - "\" I can't recall anything except\u2026my name is Datu. And there's something\u2026something
+    missing that I can't quite grasp.\""
   - He stands up, looking determined.
-  - 'DATU : I need to figure out what happened. How I ended up in this forest. I
-    won''t rest until I have answers.'
+  - '"I need to figure out what happened. How I ended up in this forest. I won''t
+    rest until I have answers."'
   textSpeed: 0.05
   timeline: {fileID: 1791546500}
   canClick: 1

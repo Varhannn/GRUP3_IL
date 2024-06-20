@@ -23,6 +23,9 @@ public class TextSystem : MonoBehaviour
     {
         textComponent.text = string.Empty;
         StartDialogue();
+        canClick = false;
+        StartCoroutine(PlayTimeline(3f));
+        StartCoroutine(EnableCanClick(3f));
     }
 
     // Update is called once per frame
@@ -36,39 +39,39 @@ public class TextSystem : MonoBehaviour
             if (textComponent.text == lines[index])
             {
                 Debug.Log(index + 1);
-                if (index == 11)
+                if (index == 0)
                 {
                     canClick = false;
-                    StartCoroutine(PlayTimeline(3f));
-                    StartCoroutine(EnableCanClick(3f));
+                    StartCoroutine(PlayTimeline(5.70f));
+                    StartCoroutine(EnableCanClick(5.70f));
+                }
+                // else if (index == 2)
+                // {
+                //     canClick = false;
+                //     StartCoroutine(PlayTimeline(5.70f));
+                //     StartCoroutine(EnableCanClick(5.70f));
 
-                }
-                else if (index == 12)
-                {
-                    canClick = false;
-                    StartCoroutine(PlayTimeline(5.30f));
-                    StartCoroutine(EnableCanClick(5.30f));
-                }
-                else if (index == 21)
+                // }
+                else if (index == 9)
                 {
                     canClick = false;
                     StartCoroutine(PlayTimeline(5.70f));
                     StartCoroutine(EnableCanClick(5.70f));
 
                 }
-                else if (index == 22)
+                else if (index == 10)
                 {
                     canClick = false;
                     StartCoroutine(PlayTimeline(5.70f));
                     StartCoroutine(EnableCanClick(5.70f));
                 }
-                else if (index == 25)
+                else if (index == 13)
                 {
                     canClick = false;
                     StartCoroutine(PlayTimeline(4.30f));
                     StartCoroutine(EnableCanClick(4.30f));
                 }
-                else if (index == 26)
+                else if (index == 15)
                 {
                     canClick = false;
                     StartCoroutine(ChangeScene());
@@ -119,7 +122,7 @@ public class TextSystem : MonoBehaviour
     IEnumerator ChangeScene()
     {
         timeline.Resume();
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("Stage1");
     }
 
