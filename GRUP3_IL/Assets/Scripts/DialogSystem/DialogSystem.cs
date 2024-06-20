@@ -12,6 +12,7 @@ public class DialogSystem : MonoBehaviour
     public float textSpeed;
     private bool canNextLine;
     private int index;
+    public MonoBehaviour playerMovementScript;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +70,7 @@ public class DialogSystem : MonoBehaviour
         {
             gameObject.SetActive(false);
             dialogBox.SetActive(false);
+            playerMovementScript.enabled = true;
         }
     }
 }
