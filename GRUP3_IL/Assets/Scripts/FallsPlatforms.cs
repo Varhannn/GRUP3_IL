@@ -1,22 +1,23 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FallsPlatforms : MonoBehaviour
 {
-
     private Rigidbody2D rb;
     private bool OnPlatform = false;
     private Animator anim;
+    private Vector3 originalPosition;
 
     public float fallDelay = 1f;
-    public float destroyDelay = 1f;
+    public float respawnDelay = 5f;
+    public GameObject platformPrefab;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = true;
         anim = GetComponent<Animator>();
+        originalPosition = transform.position;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -32,14 +33,18 @@ public class FallsPlatforms : MonoBehaviour
     {
         anim.SetTrigger("Vibrate");
         yield return new WaitForSeconds(delay);
-        rb.isKinematic = false;  
+        rb.isKinematic = false;
         rb.gravityScale = 1;
-        StartCoroutine(DestroyAfterDelay(destroyDelay));
+        yield return new WaitForSeconds(respawnDelay - delay);
+        RespawnPlatform();
     }
 
-    private IEnumerator DestroyAfterDelay(float delay)
+    private void RespawnPlatform()
     {
-        yield return new WaitForSeconds(delay);
-        Destroy(gameObject);
+        rb.velocity = Vector2.zero;
+        rb.isKinematic = true;
+        transform.position = originalPosition;
+        OnPlatform = false;
+        anim.SetTrigger("Idle");
     }
 }
